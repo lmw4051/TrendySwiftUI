@@ -10,6 +10,7 @@ import SwiftUI
 struct TabBar: View {
   @State var selectedTab: Tab = .home
   @State var color: Color = .teal
+  @State var tabItemWidth: CGFloat = 0
   
   var body: some View {
     ZStack(alignment: .bottom) {
@@ -48,6 +49,14 @@ struct TabBar: View {
           }
           .foregroundStyle(selectedTab == item.tab ? .primary : .secondary)
           .blendMode(selectedTab == item.tab ? .overlay : .normal)
+          .overlay(
+            GeometryReader { proxy in
+              Color.clear.preference(key: TabPreferenceKey.self, value: proxy.size.width)
+            }
+          )
+          .onPreferenceChange(TabPreferenceKey.self) { value in
+            tabItemWidth = value
+          }
         }
       }
       .padding(.horizontal, 8)
@@ -62,7 +71,7 @@ struct TabBar: View {
             Spacer()
             Spacer()
           }
-          Circle().fill(color).frame(width: 88)
+          Circle().fill(color).frame(width: tabItemWidth)
           if selectedTab == .home { Spacer() }
           if selectedTab == .explore {
             Spacer()
@@ -84,7 +93,7 @@ struct TabBar: View {
             .fill(color)
             .frame(width: 28, height: 5)
             .cornerRadius(3)
-            .frame(width: 88)
+            .frame(width: tabItemWidth)
             .frame(maxHeight: .infinity, alignment: .top)
           if selectedTab == .home { Spacer() }
           if selectedTab == .explore {
@@ -105,5 +114,6 @@ struct TabBar: View {
 struct TabBar_Previews: PreviewProvider {
   static var previews: some View {
     TabBar()
+.previewInterfaceOrientation(.portrait)
   }
 }
