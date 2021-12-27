@@ -12,6 +12,7 @@
 		545DBFD22778D7A5000D38D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545DBFD12778D7A5000D38D0 /* Assets.xcassets */; };
 		545DBFD52778D7A5000D38D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545DBFD42778D7A5000D38D0 /* Preview Assets.xcassets */; };
 		545DBFDC27796C13000D38D0 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545DBFDB27796C13000D38D0 /* Styles.swift */; };
+		545DBFDE2779717A000D38D0 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545DBFDD2779717A000D38D0 /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		545DBFD12778D7A5000D38D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		545DBFD42778D7A5000D38D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		545DBFDB27796C13000D38D0 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		545DBFDD2779717A000D38D0 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				545DBFCD2778D7A2000D38D0 /* TrendySwiftUIApp.swift */,
 				545DBFCF2778D7A2000D38D0 /* ContentView.swift */,
+				545DBFDD2779717A000D38D0 /* AccountView.swift */,
 				545DBFDB27796C13000D38D0 /* Styles.swift */,
 				545DBFD12778D7A5000D38D0 /* Assets.xcassets */,
 				545DBFD32778D7A5000D38D0 /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545DBFDE2779717A000D38D0 /* AccountView.swift in Sources */,
 				545DBFDC27796C13000D38D0 /* Styles.swift in Sources */,
 				545DBFD02778D7A2000D38D0 /* ContentView.swift in Sources */,
 				545DBFCE2778D7A2000D38D0 /* TrendySwiftUIApp.swift in Sources */,
