@@ -19,10 +19,11 @@ struct ContentView: View {
       Text("Acoustic Guitar")
         .font(.largeTitle)
         .fontWeight(.bold)
+        .foregroundStyle(.linearGradient(colors: [.primary, .primary.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomTrailing))
       Text("String Instrument".uppercased())
         .font(.footnote)
         .fontWeight(.semibold)
-        .foregroundColor(.secondary)
+        .foregroundStyle(.secondary)
       Text("The guitar is a fretted musical instrument that typically has six strings.")
         .font(.footnote)
         .multilineTextAlignment(.leading)
@@ -40,11 +41,21 @@ struct ContentView: View {
     .background(
       Image("Blob 1")
         .offset(x: 250, y: -100))
+    .overlay(
+      Image("GuitarIllustration")
+        .resizable()
+        .aspectRatio(contentMode: .fit)
+        .frame(height: 230)
+        .offset(x: 32, y: -80)
+    )
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
+    ContentView()
+      .preferredColorScheme(.dark)
+      .previewDevice("iPhone 13")
   }
 }
