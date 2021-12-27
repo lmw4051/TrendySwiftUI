@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AccountView: View {
   @State var isDeleted = false
+  @State var isPinned = false
   
   var body: some View {
     NavigationView {
@@ -84,10 +85,7 @@ struct AccountView: View {
             Label("Delete", systemImage: "trash")
           }
           .tint(.red)
-          Button { } label: {
-            Label("Pin", systemImage: "pin")
-          }
-          .tint(.yellow)
+          pinButton
         }
       }
       
@@ -99,9 +97,23 @@ struct AccountView: View {
             .foregroundColor(.secondary)
         }
       }
+      .swipeActions {
+        pinButton
+      }
     }
     .accentColor(.primary)
     .listRowSeparator(.hidden)
+  }
+  
+  var pinButton: some View {
+    Button { isPinned.toggle() } label: {
+      if isPinned {
+        Label("Unpin", systemImage: "pin.slash")
+      } else {
+        Label("Pin", systemImage: "pin")
+      }
+    }
+    .tint(isPinned ? .gray : .yellow)
   }
 }
 
