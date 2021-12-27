@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  TrendySwiftUI
 //
 //  Created by David on 2021/12/27.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
   var body: some View {
     VStack(alignment: .leading, spacing: 8.0) {
       Spacer()
@@ -54,11 +54,8 @@ struct ContentView: View {
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
-    ContentView()
-      .preferredColorScheme(.dark)
-      .previewDevice("iPhone 13")
+    HomeView()
   }
 }
