@@ -47,6 +47,7 @@ struct TabBar: View {
             .frame(maxWidth: .infinity)
           }
           .foregroundStyle(selectedTab == item.tab ? .primary : .secondary)
+          .blendMode(selectedTab == item.tab ? .overlay : .normal)
         }
       }
       .padding(.horizontal, 8)
@@ -61,7 +62,30 @@ struct TabBar: View {
             Spacer()
             Spacer()
           }
-          Circle().fill(color).frame(width: 80)
+          Circle().fill(color).frame(width: 88)
+          if selectedTab == .home { Spacer() }
+          if selectedTab == .explore {
+            Spacer()
+            Spacer()
+          }
+          if selectedTab == .notifications { Spacer() }
+        }
+        .padding(.horizontal, 8)
+      )
+      .overlay(
+        HStack {
+          if selectedTab == .library { Spacer() }
+          if selectedTab == .explore { Spacer() }
+          if selectedTab == .notifications {
+            Spacer()
+            Spacer()
+          }
+          Rectangle()
+            .fill(color)
+            .frame(width: 28, height: 5)
+            .cornerRadius(3)
+            .frame(width: 88)
+            .frame(maxHeight: .infinity, alignment: .top)
           if selectedTab == .home { Spacer() }
           if selectedTab == .explore {
             Spacer()
