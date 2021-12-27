@@ -11,7 +11,7 @@ import SwiftUI
 struct TrendySwiftUIApp: App {
   var body: some Scene {
     WindowGroup {
-      MatchedView()
+      ContentView()
     }
   }
 }

@@ -24,6 +24,8 @@
 		545DBFF52779ED08000D38D0 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545DBFF42779ED08000D38D0 /* AnimatableFontModifier.swift */; };
 		545DBFF72779F237000D38D0 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545DBFF62779F237000D38D0 /* Course.swift */; };
 		545DBFF9277A0B90000D38D0 /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545DBFF8277A0B90000D38D0 /* MatchedView.swift */; };
+		545DBFFD277A1B7F000D38D0 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545DBFFC277A1B7F000D38D0 /* CourseItem.swift */; };
+		545DBFFF277A1BFE000D38D0 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545DBFFE277A1BFE000D38D0 /* CourseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		545DBFF42779ED08000D38D0 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		545DBFF62779F237000D38D0 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		545DBFF8277A0B90000D38D0 /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
+		545DBFFC277A1B7F000D38D0 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
+		545DBFFE277A1BFE000D38D0 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				545DBFE72779BBAE000D38D0 /* HomeView.swift */,
 				545DBFDD2779717A000D38D0 /* AccountView.swift */,
 				545DBFF8277A0B90000D38D0 /* MatchedView.swift */,
+				545DBFFE277A1BFE000D38D0 /* CourseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 				545DBFDF27799579000D38D0 /* HexagonView.swift */,
 				545DBFE127799809000D38D0 /* BlobView.swift */,
 				545DBFEE2779E0D8000D38D0 /* FeaturedItem.swift */,
+				545DBFFC277A1B7F000D38D0 /* CourseItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 			files = (
 				545DBFE82779BBAE000D38D0 /* HomeView.swift in Sources */,
 				545DBFDE2779717A000D38D0 /* AccountView.swift in Sources */,
+				545DBFFF277A1BFE000D38D0 /* CourseView.swift in Sources */,
 				545DBFE027799579000D38D0 /* HexagonView.swift in Sources */,
 				545DBFDC27796C13000D38D0 /* Styles.swift in Sources */,
 				545DBFF9277A0B90000D38D0 /* MatchedView.swift in Sources */,
@@ -227,6 +234,7 @@
 				545DBFD02778D7A2000D38D0 /* ContentView.swift in Sources */,
 				545DBFF72779F237000D38D0 /* Course.swift in Sources */,
 				545DBFCE2778D7A2000D38D0 /* TrendySwiftUIApp.swift in Sources */,
+				545DBFFD277A1B7F000D38D0 /* CourseItem.swift in Sources */,
 				545DBFEF2779E0D8000D38D0 /* FeaturedItem.swift in Sources */,
 				545DBFF32779E765000D38D0 /* PreferenceKeys.swift in Sources */,
 				545DBFE42779A1A0000D38D0 /* TabBar.swift in Sources */,
