@@ -14,6 +14,7 @@
 		545DBFDC27796C13000D38D0 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545DBFDB27796C13000D38D0 /* Styles.swift */; };
 		545DBFDE2779717A000D38D0 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545DBFDD2779717A000D38D0 /* AccountView.swift */; };
 		545DBFE027799579000D38D0 /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545DBFDF27799579000D38D0 /* HexagonView.swift */; };
+		545DBFE227799809000D38D0 /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545DBFE127799809000D38D0 /* BlobView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		545DBFDB27796C13000D38D0 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		545DBFDD2779717A000D38D0 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		545DBFDF27799579000D38D0 /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
+		545DBFE127799809000D38D0 /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				545DBFCF2778D7A2000D38D0 /* ContentView.swift */,
 				545DBFDD2779717A000D38D0 /* AccountView.swift */,
 				545DBFDF27799579000D38D0 /* HexagonView.swift */,
+				545DBFE127799809000D38D0 /* BlobView.swift */,
 				545DBFDB27796C13000D38D0 /* Styles.swift */,
 				545DBFD12778D7A5000D38D0 /* Assets.xcassets */,
 				545DBFD32778D7A5000D38D0 /* Preview Content */,
@@ -149,6 +152,7 @@
 				545DBFDE2779717A000D38D0 /* AccountView.swift in Sources */,
 				545DBFE027799579000D38D0 /* HexagonView.swift in Sources */,
 				545DBFDC27796C13000D38D0 /* Styles.swift in Sources */,
+				545DBFE227799809000D38D0 /* BlobView.swift in Sources */,
 				545DBFD02778D7A2000D38D0 /* ContentView.swift in Sources */,
 				545DBFCE2778D7A2000D38D0 /* TrendySwiftUIApp.swift in Sources */,
 			);
