@@ -36,11 +36,12 @@ struct AccountView: View {
           }
         }
         .frame(maxWidth: .infinity)
+        .padding()
         
         Section {
-          Text("Settings")
-          Text("Billing")
-          Text("Help")
+          Label("Settings", systemImage: "gear")
+          Label("Billing", systemImage: "creditcard")
+          Label("Help", systemImage: "questionmark")
         }
         .listRowSeparatorTint(.blue)
         .listRowSeparator(.hidden)
