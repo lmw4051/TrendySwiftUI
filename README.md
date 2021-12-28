@@ -9,3 +9,5 @@
 
 **Problem Needs to be Solved**
 - For the transition effect, the close button on the top right is not easy to click
+
+![image](https://github.com/lmw4051/TrendySwiftUI/blob/main/Simulator%20Screen%20Recording%20-%20iPhone%2013%20-%202021-12-28%20at%2014.13.29.gif)
