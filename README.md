@@ -5,4 +5,7 @@
 - Deployment Target 15.0
 
 **Feature**
-Using SwiftUI to create parallax/animation/transition effect
+- Using SwiftUI to create parallax/animation/transition effect
+
+**Problem Needs to be Solved**
+- For the transition effect, the close button on the top right is not easy to click
